@@ -27,7 +27,7 @@ using namespace std;
 
 #define PI 3.14
 const int cameraID = 0;
-const string H_filename = "H_calibration.xml";
+const string H_filename = "calibration/H_calibration.xml";
 
 #ifndef _CRT_SECURE_NO_WARNINGS
 # define _CRT_SECURE_NO_WARNINGS

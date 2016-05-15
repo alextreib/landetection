@@ -37,7 +37,7 @@ Dist_correct::Dist_correct(){
 	}
 	m_undistorted_delay = 25;	//default value
 	m_goodInput = false;
-	m_inputSettingsFile = "settings_" + camera_model + ".xml";
+	m_inputSettingsFile = "calibration/settings_" + camera_model + ".xml";
 	m_mode = m_inputType == Dist_correct::IMAGE_LIST ? CAPTURING : DETECTION;
 	m_prevTimestamp = 0;
 	m_blinkOutput = false;
@@ -230,7 +230,7 @@ int Dist_correct::readCameraParams()
 	}
 	if (m_readin_set = 1)
 	{
-		FileStorage fs_calibrated("camera_calibration_" + camera_model + ".xml", FileStorage::READ);
+		FileStorage fs_calibrated("calibration/camera_calibration_" + camera_model + ".xml", FileStorage::READ);
 		if (!fs_calibrated.isOpened())
 		{
 			cout << "Could not open the configuration file: \"" << m_inputSettingsFile << "\"" << endl;

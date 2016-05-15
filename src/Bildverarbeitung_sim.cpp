@@ -1,16 +1,25 @@
-#include "Bildverarbeitung_sim.hpp"
+/*****************************************************************************/
+/* filename: 	Bird_eye.cpp                                                 */
+/* author: 		Alexander Treib (TR)                                         */
+/* description:	Simulation of the superior class                             */
+/*---------------------------------------------------------------------------*/
+/* revision history:                                                         */
+/* date       | author | modification                                        */
+/*____________|________|_____________________________________________________*/
+/* 2015-11-20 | TR     | initial revision                                    */
+/*****************************************************************************/
 
+#include "Bildverarbeitung_sim.hpp"
 
 Bildverarbeitung_sim::Bildverarbeitung_sim()
 {
 }
 
-
 Bildverarbeitung_sim::~Bildverarbeitung_sim()
 {
 }
 
-int main()
+bool go()		//could also be main
 {
 	Bildverarbeitung_sim sim;
 	Mat mat;
@@ -27,6 +36,7 @@ int main()
 		//imshow("Undistorted", mat);
 
 		sim.bird_eye.go(mat);	//110ms
+	
 		//Robertfkt
 		imshow("Bird_eye", mat);
 		/*t = ((double)getTickCount() - t) / getTickFrequency();
