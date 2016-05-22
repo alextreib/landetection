@@ -1,4 +1,4 @@
-#Camera calibration and bird's-eye algorithms
-This project calibrates and undistort the videostream of a camera.
-Furthermore, the project can transform the input image of the camera into a bird's-eye view.
-All these algorithms can run in realtime.
+# Lanedetection
+This project reads the existing calibration through the calibration tool.
+With this, it distorts the image and converts it into a bird-eye's view.
+These images are basis for the lanedetection.
